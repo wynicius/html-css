@@ -16,11 +16,12 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom, #3cd681, #1a5b37);
-    text-align: center;
-    color: white;
     min-width:320px;
     max-width:1000px;
+    background-image: linear-gradient(to bottom, #3cd681, #1a5b37);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.438);
+    text-align: center;
+    color: white;
 }
     h1,aside{
         padding: 10px 10px;
@@ -35,7 +36,7 @@ header{
         nav > a{
             color: white;
             text-decoration: none;
-            padding: 5px 5px 5px 10px;    
+            padding: 5px 4px 5px 10px;    
         }
             nav > a:hover{
                 background-color: #279157;
@@ -47,9 +48,8 @@ main{
     text-align: justify;
     min-width:320px;
     max-width:1000px;
-    margin: auto;
     padding: 0px 20px;
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.438);
     border-radius: 0px 0px 5px 5px;
 }
     img{
