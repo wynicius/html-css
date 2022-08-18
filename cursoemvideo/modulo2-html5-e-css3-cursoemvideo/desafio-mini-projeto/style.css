@@ -27,13 +27,13 @@ header{
     }
     nav{
         text-align: left;
-        padding: 10px 0px 5px 20px;
+        padding: 10px 0px 5px 0px;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.548);
     }
         nav > a{
             color: white;
             text-decoration: none;
-            padding: 5px 0px 5px 10px;    
+            padding: 5px 10px 5px 10px;    
         }
             nav > a:hover{
                 background-color: #279157;
