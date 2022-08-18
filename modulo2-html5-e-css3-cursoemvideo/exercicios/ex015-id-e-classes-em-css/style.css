@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, #F2E5D5, #BFA68F, #8C6B58);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+}
+
+h1{
+    color: #402617;
+}
+
+h1#principal{
+    color: #5e2b0e;
+    text-align: center;
+    text-shadow: 1px 1px 1px;
+}
+
+h2{
+    color: #975f3e;
+}
+
+/* assim que se cria anotações em CSS */
+
+.basico{
+    color: #97703e;
+}
+
+.intermediario{
+    color: #975a3e;
+
+}
+.avancado{
+    color: #97483e;
+}
+
+.destaque{
+    background-color: rgba(248, 248, 26, 0.74);
+}

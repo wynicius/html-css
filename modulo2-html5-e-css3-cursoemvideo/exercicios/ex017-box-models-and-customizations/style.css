@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body{
+    background-color: #8c919c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0px;
+}
+
+header{
+    background-color: #A68263;
+    border: 5px solid #917155;
+    margin: 10px 0px;
+}
+    header>h1{
+        text-align: center;
+        font-size: 4em;
+        margin: 20px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678)
+    }
+    nav{
+        background-color: #735645;
+        text-align: center;
+    }
+        nav > a{
+            text-decoration: none;
+            color: whitesmoke;
+            margin: 0px 10px;
+        }
+        nav > a:hover{
+            color:red;
+            text-decoration: underline;
+        }
+main{
+    background-color: #917155;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 10px 0px; /* Assunto Cap 16 Aula 6 */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493); /* Assunto Cap 16 Aula 5 */
+}
+article{
+    background-color: white;
+    text-align: justify;
+    border-bottom: 2px solid gray;
+    padding: 5px 10px;
+}
+    article > aside{
+        text-align: right;
+    }
+
+footer{
+    background-color:#917155 ;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+    footer > p{
+        margin: 0px;
+    }
+    
+

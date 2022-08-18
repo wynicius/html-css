@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Dinamicidade das imagens</h1>
+    <p>Imagine sempre que o usuário por acessar o seu site por diversos tamanhos de telas, e sua imagem pode afetar a experiencia deste usuário, graças à falta de dinamica para diferentes tamanhos de telas em contraste com o tamanho da sua imagem</p>
+
+    <!--Esxplicação do código-->
+    <p>Para resolver, programe a mesma imagem em vários tamanhos diferentes, ou seja, codificar a imagem de modo flexível
+    <br>
+    Primeiro se coloca a imagem maior, e, em seguida, pela tag source:media:type - abaixo com # nas dicas de guanabara - se coloca as imagens menores substitutivas.
+
+    <p> Veja o código-fonte o exercício... da foto abaixo:
+        <pre>
+            <code>
+    <#picture>
+        <#source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <#source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <#img src="imagens/foto-g.png" alt="Imagem flexível"> 
+    <#/picture>
+            </code>  
+        </pre>
+    </p>
+    <!--Agora o código, abaixo: -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!--Vamos lançar audios no site-->
+    <h1>Lançando audios no site:</h1>
+    <audio preload="metadata" controls>
+        <source src="audios/eminem-syllables.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

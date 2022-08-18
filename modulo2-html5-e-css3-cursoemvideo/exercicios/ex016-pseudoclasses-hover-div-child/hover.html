@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovers</title>
+    <style>
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: lightskyblue;
+        }
+
+        h1#principal{
+            text-align: center;
+            font-size: 1.5em;
+            margin: auto;
+        }
+
+        h1#secundario{
+            font-size: 0.99em;
+        }
+
+        /* A PARTIR DAQUI, ABAIXO, É O QUE IMPORTA NESTE EXERCÍCIO */
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            background-color: red;
+            color: white;
+        }
+
+        div:hover{
+            display:block;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="principal">Hover com elemento display para esconder parágrafo com a child > </h1>
+    <h1 id="secundario">passe o mouse no texto abaixo:</h1>
+    <div>passe o mouse aqui 
+        <p>VOCÊ CONSEGUIU DEVENDAR ESTE PARÁGRAFO!!!</p>
+    </div>
+    
+</body>
+</html>
