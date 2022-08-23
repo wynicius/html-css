@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonttitulo: 'Passion One', sans-serif;
+    --fontconteudo: 'Sriracha', sans-serif;
+    --fontpadrao: 'verdana', sans-serif;
+}
+
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+}   
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+    a:hover{
+        text-decoration: underline;
+    }
+header{
+    background-color: black;
+    text-align: center;
+}
+    header > h1{
+        padding-top: 50px;
+        color: white;
+        font: normal 500 10vw var(--fonttitulo);
+        font-variant: small-caps;
+        letter-spacing: 5px;
+    }
+    header > p{
+        padding-bottom: 50px;
+        color: white;
+        font-family: var(--fontpadrao);
+    }
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font: 3vw/2.3em var(--fontconteudo)
+}
+    @media(max-width: 1200px) {
+        section{
+            font: 5vw/2.3em var(--fontconteudo);
+            
+        }
+    }
+    @media(max-width: 800px) {
+        section{
+            font: 6vw/2.3em var(--fontconteudo);
+            min-width: 320px;
+            
+        }
+    }
+    @media(max-width: 600px) {
+        section{
+            font: 6vw/3.7em var(--fontconteudo);
+            min-width: 320px;
+            
+        }
+    }
+    @media(max-width: 425) {
+        section{
+            font: 8vw/2.3em var(--fontconteudo);
+            width: 320px;
+            
+        }
+    } 
+    .imgsec{
+        background-color: rgb(66, 66, 66);
+        color: white;
+        box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    section.imgsec > p{
+        display:inline-block;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.445);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+    }
+    #pimg1{
+        background-image: url('imagens/background001.jpg');
+        background-position: right center;
+
+    }
+    #pimg2{ 
+        background-image: url('imagens/background002.jpg');
+        background-position: right center;
+    }
+
+footer{
+    padding: 10px 0px;
+    background-color: black;
+    color: white;
+    font-family: var(--fontpadrao);
+    text-align: center;
+    font-size: 0.9em;
+}
