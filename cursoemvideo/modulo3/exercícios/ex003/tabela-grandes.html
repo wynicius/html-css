@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela grande</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+            font-weight: bold;
+            }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        .num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th, td#total{
+            padding: 15px;
+            border: 1px solid black;
+            background-color: rgb(71, 71, 71);
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Top 10 Populações dos Municípios Pernambucanos em 2021</caption>
+        <thead>
+            <tr>
+                <th>Município</th>
+                <th style="width:100px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Recife</td>
+                <td class="num">1.661.017</td>
+            </tr>
+            <tr>
+                <td>Jaboatão dos Guararapes</td>
+                <td class="num">711.330</td>
+            </tr>
+            <tr>
+                <td>Olinda</td>
+                <td class="num">393.734</td>
+            </tr>
+            <tr>
+                <td>Caruaru</td>
+                <td class="num">369.343</td>
+            </tr>
+            <tr>
+                <td>Petrolina</td>
+                <td class="num">359.372</td>
+            </tr>
+            <tr>
+                <td>Paulista</td>
+                <td class="num">336.919</td>
+            </tr>
+            <tr>
+                <td>Cabo de Santo Agostinho</td>
+                <td class="num">210.796</td>
+            </tr>
+            <tr>
+                <td>Camaragibe</td>
+                <td class="num">159.945</td>
+            </tr>
+            <tr>
+                <td>Garanhuns</td>
+                <td class="num">141.347</td>
+            </tr>
+            <tr>
+                <td>Vitória de Santo Antão</td>
+                <td class="num">140.389</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Número total de habitantes:</th>
+            <td class="num" id="total">4.544.192</td>
+        </tfoot>
+   
+    </table>
+    <!-- PARÁGRAFOS PARA TESTE DO CABEÇALHO CONGELADO -->
+         <p style=" width: 500px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi quibusdam praesentium ipsa nisi? Aliquid, aliquam veritatis. Sit, similique tenetur, sapiente, voluptate ipsa quidem saepe numquam quaerat excepturi fuga velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at, assumenda eaque aut numquam atque commodi debitis minima? Quasi quisquam repellendus odit dolor assumenda ut laborum libero debitis doloribus eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolore deleniti animi omnis autem ipsam voluptas, repellendus incidunt saepe ab corporis fugit aliquid suscipit sit, quo ut iure, ratione fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus non quaerat expedita illo ut dolores impedit quas deleniti natus, placeat, animi quisquam laboriosam! Obcaecati maiores dignissimos veniam nulla laudantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magni ratione quidem dolorem quaerat nihil quibusdam odit saepe, doloremque commodi quae earum amet atque iste ullam tempora architecto cum cupiditate?
+        </p>
+        <p style=" width: 500px;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda odio, rem aperiam iusto quo eaque ullam soluta a nam aut doloribus ipsum similique voluptas obcaecati neque ab veritatis rerum repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ut ipsum quo, deserunt assumenda corrupti ducimus eius ab natus, nam nulla. Sunt atque error, animi earum ut itaque ab rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at numquam aliquam tenetur cum tempore iste ad quasi labore. Quis hic suscipit necessitatibus deleniti optio. Rem libero iure fugit dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vero corrupti fugit, perspiciatis iure saepe at tenetur temporibus ut sunt molestiae, esse dolores. Ipsam velit placeat, explicabo sint quos facilis!
+        </p>
+        <p style=" width: 500px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nobis itaque. Veniam, nihil sit? Vitae qui, perspiciatis accusamus ipsa blanditiis harum repudiandae dolor cumque officiis cupiditate eum tempora dicta aspernatur! lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corrupti libero doloremque repellendus natus laboriosam ab magni blanditiis fuga. Voluptas saepe velit iusto repudiandae vitae temporibus, pariatur dicta quam deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis officia beatae corrupti eum id doloremque, error delectus, tempore quasi quae soluta cum nemo ut ea numquam. Reprehenderit quod perferendis quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero qui quod? Consequuntur mollitia blanditiis esse sit cupiditate sequi hic, adipisci quod, accusantium animi quam, illo dignissimos repellat. Officiis, perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque harum dicta in quos, error laboriosam ratione molestiae officiis nulla temporibus voluptatem alias similique vitae ut inventore, sed blanditiis? Fuga, fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vero natus eligendi nobis illum repudiandae quisquam, cum doloribus impedit dolor ipsam voluptates nesciunt dolorum voluptatem praesentium doloremque. Quam, sapiente culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illum assumenda incidunt velit ab consequatur voluptas minus fugit amet fugiat delectus, dolores, hic quaerat voluptatibus ipsum voluptate sequi pariatur provident.</p>
+</body>
+</html>
