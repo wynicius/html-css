@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela simples</title>
+    <style>
+        table{
+            width: 400px;
+            height: 150px;
+            border-collapse: collapse; /* RETIRA O ESPAÇAMENTO ENTRE AS BORDAS  */
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle; /* ALINHAMENTO VERTICAL: TOP MIDDLE e BOTTOM  */
+        }
+            .escolhido{
+                background-color: rgb(118, 236, 118);
+            }
+            .demonstracaovertical{
+                vertical-align: top;
+            }
+    </style>
+</head>
+<body>
+    <h1> Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DAS TABELAS (simples)
+        TABLE = TABELA
+        TABLE ROW = LINHA DE TABELA
+        TABLE HEADER = CABEÇALHO DE TABELA
+        TABLE DATA = DADO DE TABELA
+    -->
+    <table>
+        <tr> <!-- primeira linha -->
+            <td>A1</td> <!-- dados da tabela -->
+            <td>A2</td>
+            <td class="escolhido">A3</td>
+        </tr>
+        <tr>
+            <td class="escolhido">B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td class="demonstracaovertical">C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
