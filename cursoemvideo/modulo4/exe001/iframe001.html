@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 001</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+            font-weight: bold;
+            }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        .num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th, td#total{
+            padding: 15px;
+            border: 1px solid black;
+            background-color: rgb(71, 71, 71);
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Top 10 Populações dos Municípios Pernambucanos em 2021</caption>
+        <thead>
+            <tr>
+                <th>Município</th>
+                <th style="width:100px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Recife</td>
+                <td class="num">1.661.017</td>
+            </tr>
+            <tr>
+                <td>Jaboatão dos Guararapes</td>
+                <td class="num">711.330</td>
+            </tr>
+            <tr>
+                <td>Olinda</td>
+                <td class="num">393.734</td>
+            </tr>
+            <tr>
+                <td>Caruaru</td>
+                <td class="num">369.343</td>
+            </tr>
+            <tr>
+                <td>Petrolina</td>
+                <td class="num">359.372</td>
+            </tr>
+            <tr>
+                <td>Paulista</td>
+                <td class="num">336.919</td>
+            </tr>
+            <tr>
+                <td>Cabo de Santo Agostinho</td>
+                <td class="num">210.796</td>
+            </tr>
+            <tr>
+                <td>Camaragibe</td>
+                <td class="num">159.945</td>
+            </tr>
+            <tr>
+                <td>Garanhuns</td>
+                <td class="num">141.347</td>
+            </tr>
+            <tr>
+                <td>Vitória de Santo Antão</td>
+                <td class="num">140.389</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Número total de habitantes:</th>
+            <td class="num" id="total">4.544.192</td>
+        </tfoot>
+   
+    </table>
+</body>
+</html>
