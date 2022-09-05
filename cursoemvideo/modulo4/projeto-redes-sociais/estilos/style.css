@@ -33,13 +33,14 @@ main{
     }
     iframe#tela{
         position: relative;
-        top: 80px;
-        left: 22px;
-        width: 268px;
-        height: 472px;
+        top: 79px;
+        left: 21px;
+        width: 269px;
+        height: 473px;
     }
     #redes-sociais{
-        text-align: right;
+        position: absolute;
+        right: .2%;
     }
         #redes-sociais img {
             height: 50px;
