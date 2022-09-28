@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script>
+        function alerta() {
+            alert("Suas credenciais foram enviadas com sucesso!")
+        }
+    </script>
+</head>
+<body>
+    <h1>Texto de Formulário</h1>
+    <!-- deve-se adicionar o atributo REQUIRED para não admitir o envio do formulário em branco -->
+
+    <!-- deve-se adicionar o atributo MINLENGTH e/ou MAXLENGTH para restringir um número de caracteres -->
+
+    <!-- É interessante colocar o atributo PLACEHOLDER="", que é aquele nomezinho que fica em segundo plano, dentro da caixinha, como dica do que preencher -->
+
+    <!-- Para desligar a caixinha de valores já inseridos antes, use o atributo AUTOCOMPLETE="OFF" -->
+    <form onsubmit="alerta()" method="get" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="" id="iusu" required maxlength="15" minlength="6" placeholder="de 6 a 15 caracteres" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="" id="isen" required minlength="4" maxlength="10" placeholder="de 4 a 10 caracteres" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

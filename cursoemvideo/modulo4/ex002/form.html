@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> 
+    <form action="cadastro.php"> 
         <!-- Para retirar a caixinha de sugestões de valores já digitados antes, pelo cliente, escreva dentro da tag do form:
         AUTOCOMPLETE="OFF"
 
@@ -21,6 +21,10 @@
         action="cadastro.php [exemplo]"
 
         o "for=''" deve ser atribuído ao name do input em casos de html com php, e atribuído ao id do input em casos de html com javascript
+
+        Dentro do <form> pode-se usar method="GET ou POST". Quando usar? 
+            Get é compartilhável(na url) e o POST esconde os dados da interface de usuário (mas ainda aparece no DevTools)
+                TAMBÉM não se deve utilizar o GET em formulário com mais de 3.000 Bits e não se deve utilizar também para dados sensíveis.
         -->
         <p> <label for="inumber">Nome:
                 <input type="number" name="numero" id="inumber">

@@ -1,0 +1,1 @@
+Este é um arquivo PHP apenas para cadastro do formulário
