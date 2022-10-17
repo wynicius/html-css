@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+    <style>
+        body{
+            background-color: black;
+            font: 1em  Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            color: white;
+            width: 400px;
+        }
+        input,button{
+            display: block;
+            height: 25px;
+        }
+        #nome,#email,#msg{
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="nome">Nome
+                <input type="text" name="users-name" id="nome" placeholder="Como podemos lhe chamar?" size="29">
+            </label>
+            <label for="email">Email
+                <input type="email" name="users-email" id="email" placeholder="pedro@mail.com" size="29" required>
+            </label> 
+            <label for="msg">Mensagem
+                <br>
+                <textarea name="users-message" id="msg" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+            </label>
+            <button id="btn">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
