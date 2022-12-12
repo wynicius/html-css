@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    *** Adjacent Sibling Combinator: ***
+    
+        Identificado pelo sinal + entre dois seletores
+        Seleciona somente o elemento do lado direito que é irmão direto na hierarquia
+        <!-- 
+        <style>
+            h1 + p {
+                color: red;
+            }
+        </style> 
+        -->
+       
+
+    *** General Sibling Combinator: ***
+        
+        Identificado pelo sinal ~ entre dois seletores
+        Seleciona todos os elementos irmãos
+        <!-- 
+        <style>
+            h1 ~ p {
+                color: red;
+            }
+        </style>  
+        -->
+       
+
+    *** Seletores de Atributos ***
+
+        Dica:
+        Seletores muito específicos tendem a causar dificuldades no reuso das regras de estilização
+        Muitas vezes, um simples uso de classes, torna o trabalho mais eficiente
+        <!-- 
+        <style>
+            ul > li[title="titulo"] {
+                color: red;
+            }
+        </style> 
+        -->
+</head>
+<body>
+    <h1 title="titulo">
+        Título
+    </h1>
+      <p>
+        Esse é um parágrafo
+      </p>
+      <p>
+        Mais um parágrafo
+      </p>
+</body>
+</html>
