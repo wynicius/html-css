@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eixos</title>
+    <title>Eixo principal e cuzado</title>
     <style>
-        .container{
-            display: flex; /* cria o plano perpendicular em (x,Y) */
-            flex-direction: column;
+        *{
+            padding:0;
+            margin:0;
         }
-        #main{
+
+        body{    
+            .container{
+                display: flex; /* cria o plano perpendicular em (x,Y) */
+                flex-direction: column;
+                justify-content: flex-end;
+                background-color lightskyblue;
+                border-radius: 5px 0px 0px 5px;
+                height: 20%;
+                align-content: center;
+                
+            }
+        }
             
     </style>
 </head>
 <body>
-    <h1 style{3em;margin: 20px}>Eixos (x, y) do Flex, o principal.</h1>
+    <h1 style{3em;margin: 20px}>Eixos Principais(locais) e Cruzados (x, y) do Flex.</h1>
 
     <div class="container">
-        <div class="class"item">
-            Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor.
+        <div class="item">
+            A
         </div>
-        <div class="class"item">
-            Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis, espiritis santis. Cevadis im ampola pa arma uma pindureta.
+        <div class="item">
+            B
         </div>
-        <div class="class"item">
-            Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+        <div class="item">
+            C
         </div>
     </div>
 </body>
