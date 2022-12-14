@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gap</title>
+    <style>
+        .box{
+            display: flex;
+            flex-flow: row;
+            gap: 2em;
+            
+            width: fit-content;
+            border: 1px dashed red;
+        }
+        
+        .box div {
+            border: 1px solid;;
+            width: fit-content;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Espaço entre os elementos</h1>
+    <div class="box">
+        <div class="item"> A </div>
+        <div class="item"> B </div>
+        <div class="item"> C </div>
+        <div class="item"> D </div>
+    </div>
+</body>
+</html>

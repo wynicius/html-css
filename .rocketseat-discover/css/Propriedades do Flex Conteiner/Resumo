@@ -1,0 +1,47 @@
+# Propriedades do Flex Container
+
+* Direção dos itens
+* Multi linhas
+* Alinhamento
+    * Principal
+    * Cruzado
+* Espaços entre os itens
+
+# flex-direction -> Direção dos itens
+
+- Direção dos itens
+- Flex é uma dimensão (horizontal ou vertical)
+- Podemos mudar a direção com `flex-direction`
+- valores: (row | row-reverse | column | column-reverse)
+
+# flex-wrap - > Multi linhas
+
+- Podemos usar multi linhas.
+- Cada nova linha, um novo flex container.'
+
+# flex-flow -> shorthand
+
+- flex-flow: flex-direction || flex-wrap ;
+
+# justify-content -> Alinhamento no eixo principal
+
+- justify-content: flex-start (padrão) || flex-end || center || space-around || space-between || space-evenly
+
+- Alinhamento dos elementos dentro do container
+- Distribuição dos elementos
+
+# align-items -> Alinhamento no eixo cruzado
+
+- Alinhamento dos elementos no eixo cruzado.
+
+- align-items: stretch (padrão) || flex-start || flex-end || center
+
+# gap
+
+- Espaço entre os elementos
+
+## valores
+
+Unidades de medidas
+fixas: px, pt
+flexíveis: %, em, rem

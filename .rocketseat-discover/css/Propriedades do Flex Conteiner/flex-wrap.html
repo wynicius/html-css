@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+    <style>
+        .box{
+            display: flex;
+            
+        /* flex-wrap: wrap; - this is flex-wrap, but i'll use the shorthand for record and practice */
+        /* flex-flow -> shorthand */
+
+            flex-flow: row wrap;
+            border: 1px dashed black;
+        }
+
+        .box div {
+            border: 1px solid black;
+            text-align: center;
+            width: 200px;
+        }
+            .box div:nth-child(even){
+                background-color: lightsalmon;
+            }
+    </style>
+</head>
+<body>
+    <h1>Multiplas Linhas</h1>
+    
+    <br>
+    
+    <div class="box">
+        <div class="item"> A </div>
+        <div class="item"> B </div>
+        <div class="item"> C </div>
+        <div class="item"> D </div>
+        <div class="item"> E </div>
+        <div class="item"> F </div>
+        <div class="item"> H </div>
+        <div class="item"> I </div>
+        <div class="item"> J </div>
+        <div class="item"> K </div>
+        <div class="item"> L </div>
+    </div>
+</body>
+</html>

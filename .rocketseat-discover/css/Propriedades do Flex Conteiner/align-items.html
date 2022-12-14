@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        .box {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            
+            border: 1px solid red;
+            height: fit-content;
+        }
+
+        .box div {
+            border: 1px solid;
+            font-size: 3em;
+            font-family:monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhamento dos elementos no eixo principal</h1>
+    <div class="box">
+        <div class="item"> A </div>
+        <div class="item"> B </div>
+        <div class="item"> C </div>
+        <div class="item"> D </div>
+    </div>
+</body>
+</html>
