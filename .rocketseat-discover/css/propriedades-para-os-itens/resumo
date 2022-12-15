@@ -1,0 +1,20 @@
+# Propriedades para os itens
+
+- flex-basis
+- flex-grow
+- flex-shrink
+- flex
+- order
+
+# Flex Basis
+
+flex-basis: auto || 25px | 25% ; 
+- com o atributo do número 0, não dá para mexer em largura dos itens
+
+# flex-grow
+
+- O crescimento do item dentro do container em relação aos espaços vazios.
+
+# flex-shrink
+
+- O encolher do item dentro do container.

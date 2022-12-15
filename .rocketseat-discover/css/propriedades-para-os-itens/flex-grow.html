@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        .box{
+            display: flex;
+            flex-direction: column;
+            border: 1px dashed red;
+            
+
+            height: 300px;
+        }
+        
+        .item {
+            border: 1px solid;;
+            flex-basis: auto;
+            font-size: 1.5em;
+        }
+
+        .item:nth-child(3),.item:nth-child(2){
+            flex-grow: 1;
+        }
+
+        /* .item:nth-child(1){
+            flex-grow: 2;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Espaço entre os elementos</h1>
+    <div class="box">
+        <div class="item"> A </div>
+        <div class="item"> B </div>
+        <div class="item"> C </div>
+        <div class="item"> D </div>
+    </div>
+</body>
+</html>

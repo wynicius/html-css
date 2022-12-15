@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gap</title>
+    <style>
+        .box{
+            display: flex;
+            flex-flow: column;
+
+            
+            border: 1px dashed red;
+        }
+        
+        .item {
+            border: 1px solid;;
+            flex-basis: auto;
+            font-size: 1.5em;
+
+        }
+
+        .item:nth-child(1){
+            width: 200px;
+        }
+        .item:nth-child(2-4){
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h1>Espaço entre os elementos</h1>
+    <p>A mudança do eixo altera o efeito do flex-basis na hierarquia e direcionamento da largura e/ou da altura.</p>
+    <div class="box">
+        <div class="item"> A </div>
+        <div class="item"> B </div>
+        <div class="item"> C </div>
+        <div class="item"> D </div>
+    </div>
+</body>
+</html>
