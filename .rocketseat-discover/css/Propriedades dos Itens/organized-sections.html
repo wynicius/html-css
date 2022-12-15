@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizing Section with Flex</title>
+    <script src="convert-temp.js"></script>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            
+        }
+        body{
+            display: flex;
+            border: 1px dashed red;
+ /* background:linear-gradient(to bottom,#EB6213, #F76714, #D15711, #AB470E, #6B2D09);
+            width: 100vw;
+            height: 100vh; */
+        }
+        aside{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100vh;
+            padding: 10px;
+            gap: 30px;
+            background-color: blue;
+            color: whitesmoke;
+            text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.575);
+            border: 1px dashed red;
+        }
+        aside:nth-child(1){
+            border: 1px dashed red;
+        }                
+        main{
+            display: flex;
+            flex: 4;
+            flex-direction: column;
+            background-color: greenyellow;
+            border: 1px dashed red;
+        }
+        main h1:nth-child(1){
+            margin: 10vh;
+            max-height: 20vh;
+            border: 1px dashed red;
+        }
+        main form:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100vh;
+            border: 1px dashed red;
+
+        }
+        main label:nth-child(3){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            /* transform: translate(-50%, -50%); */
+                                                                                                                                                                                   
+        }
+        input{
+            border-radius: 3px;
+            padding: 10px 10px;
+            border: 1px solid  #67afe9;
+            box-shadow: 0px 0px 4px #67afe9;
+
+        }
+
+        button{
+            background-color: #204055;
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-weight: bold;
+            border: 1px solid rgba(0, 0, 0, 0.438);
+            border-radius: 3px;
+            color: white;
+            
+        }
+        dialog{
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.527);
+            border-radius: 5px;
+            text-align: center;
+            padding:10px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <aside id="glossary">
+        <h2>What do you Wish to convert?</h2>
+        <p>Celsius to Fahrenheit or Fahrenheit to Celsius?</p>
+    </aside>
+    <main id="mainBox">
+        <h1>Temperature Converter</h1>
+        <!-- Caixa de input de Celsius para fahrenheit -->
+        <form autocomplete="off" onsubmit="Convertion()">
+            <label for="temp">
+                <input type="text" name="temp" id="temp" pattern="?[0-9]+ ?[cCfF]$" required placeholder="temperature + C or F" title="Por favor, adicione a temperatura junto com o símbolo dela (C ou F)">
+                    <br>
+                <button type="submit" class="submit">Convert</button>
+            </label>
+        </form>
+        <dialog id="window">
+            <p id="result"></p>
+            <button onclick="btnCloseC()"> OK </button>
+        </dialog>
+
+    </main>
+</body>
+</html>
